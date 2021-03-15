@@ -1,0 +1,43 @@
+<div style="text-align:center">
+  <h2>Fetch the details</h2>
+  </div>
+
+
+  <div style="text-align:center">
+
+    <button (click)="getData()">FETCH DETAILS</button>
+  <!-- <button>fetch</button> -->
+   </div>
+   <!-- mdbTable responsive="true" -->
+   <div class="container">
+    <table class="table table-striped">
+      <thead class="black white-text">
+        <tr>
+          <th>id </th>
+          <th>contact_id</th>
+          <th>account_no</th>
+          <th>alarm_event</th>
+          <th>event_code</th>
+          <th>area</th>
+          <th>zone_no</th>
+          <th>time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of people">
+          <td>{{item.id}}</td>
+          <td>{{item.contact_id}}</td>
+          <td>{{item.account_no}}</td>
+          <td>{{item.alarm_event}}</td>
+          <td>{{item.event_code}}</td>
+          <td>{{item.area}}</td>
+          <td>{{item.zone_no}}</td>
+          <td>{{item.time}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
