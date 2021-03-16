@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TextFieldModule} from '@angular/cdk/text-field';
+import { DataComponent } from './data/data.component';
 
 
 
@@ -14,6 +15,7 @@ import {TextFieldModule} from '@angular/cdk/text-field';
 @NgModule({
   declarations: [
     AppComponent,
+    DataComponent,
 
   ],
   imports: [

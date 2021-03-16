@@ -11,15 +11,10 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {
 
   }  ngOnInit(){
-    // let resp=this.http.get("http://localhost:3002/people")
+    // let resp=this.http.get("http://localhost:3005/people")
     // resp.subscribe((data)=>this.people=data)
     // console.log(this.people);
   }
-  getData(){
-    let resp=this.http.get("http://localhost:3002/people")
-    resp.subscribe((data)=>this.people=data)
-    console.log(this.people);
 
-  }
 
 }
